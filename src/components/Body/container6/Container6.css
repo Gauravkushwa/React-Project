@@ -1,0 +1,9 @@
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+}
+.image-container img{
+    width: 100%;
+    max-width: 100%;
+}
