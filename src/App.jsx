@@ -10,6 +10,9 @@ import { Image4 } from './components/Body/imageContainer4/Image4';
 import { Container6 } from './components/Body/container6/Container6';
 import { Slider5 } from './components/Body/Slider5/Slider5';
 import { ASlider2 } from './components/Body/ASlider2/ASlider';
+import { Slider4 } from './components/Body/Slider4/Slider4';
+import { ASlider3 } from './components/Body/ASlider3/ASlider';
+import Footer from './components/Body/Footer/Footer';
 
 function App() {
  
@@ -27,6 +30,9 @@ function App() {
      <Container6 />
      <Slider5 />
      <ASlider2 />
+     <Slider4 />
+     <ASlider3 />
+     <Footer />
     </>
   )
 }

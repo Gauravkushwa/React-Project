@@ -1,18 +1,31 @@
 import { useState } from "react";
-import image1 from './image2/slider2.1.webp'
-import image2 from './image2/slider2.2.webp'
-import image3 from './image2/slider2.3.webp'
-import image4 from './image2/slider2.4.webp'
-import image5 from './image2/slider2.5.webp'
-import image6 from './image2/slider2.6.webp'
-import image7 from './image2/slider2.7.webp'
-import image8 from './image2/slider2.8.webp'
-import image9 from './image2/slider2.9.webp'
-import image10 from './image2/slider2.10.webp'
-import heart from './image2/heart.png'
-import  './slider2.css'
+import image1 from './image/slider4.1.webp'
+import image2 from './image/slider4.2.webp'
+import image3 from './image/slider4.3.webp'
+import image4 from './image/slider4.4.webp'
+import image5 from './image/slider4.5.webp'
+import image6 from './image/slider4.6.webp'
+import image7 from './image/slider4.7.webp'
+import image8 from './image/slider4.8.webp'
+import image9 from './image/slider4.9.webp'
+import image10 from './image/slider4.10.webp'
+import image11 from './image/slider4.11.webp'
+import image12 from './image/slider4.12.webp'
+import image13 from './image/slider4.13.webp'
+import image14 from './image/slider4.14.webp'
+import image15 from './image/slider4.15.webp'
 
-export const Slider2 = () => {
+import image16 from './image/image2.1.webp'
+import image17 from './image/image2.2.webp'
+import image18 from './image/image2.3.webp'
+import image19 from './image/image2.4.webp'
+import image20 from './image/image2.5.webp'
+import image21 from './image/image2.6.webp'
+import image22 from './image/image2.7.webp'
+import heart from './image/heart.png'
+import  './slider4.css'
+
+export const Slider4 = () => {
     const images = [{
        src: image1,
        title: "Bewakoof@",
@@ -103,25 +116,70 @@ export const Slider2 = () => {
         actualPrice: "₹1599",
         discount: "60% OFF"                             
      },
+     {
+      src: image11,
+      title: "Bewakoof@",
+      heart: heart,
+      discription: "Men's Navy Blue Joggers",
+      currentPrice: "₹849",
+      actualPrice: "₹1699",
+      discount: "50% OFF"                             
+   },
+   {
+       src: image12,
+       title: "Bewakoof Air@1.0",
+       heart: heart,
+       discription: "Men's Brown Super Loose Fit Joggers",
+       currentPrice: "₹749",
+       actualPrice: "₹2099",
+       discount: "64% OFF"                             
+    },
+    {
+       src: image13,
+       title: "Bewakoof Air@ 1.0",
+       heart: heart,
+       discription: "Men's Grey Oversized Cargb Joggers",
+       currentPrice: "₹899",
+       actualPrice: "₹2199",
+       discount: "59% OFF"                             
+    },
+    {
+       src: image14,
+       title: "Bewakoof@",
+       heart: heart,
+       discription: "Men's Blue Casual Joggers",
+       currentPrice: "₹664",
+       actualPrice: "₹899",
+       discount: "28% OFF"                             
+    },
+    {
+       src: image15,
+       title: "Bewakoof@",
+       heart: heart,
+       discription: "Women's Grey Slim Fit Joggers",
+       currentPrice: "₹599",
+       actualPrice: "₹899",
+       discount: "50% OFF"                             
+    },
    ];
     const [startIndex, setStartIndex] = useState(0);
     const visibleCount = 5;
 
     const handleRight = () =>{
         setStartIndex((prev) =>
-            prev < images.length-visibleCount ? prev+1 : prev
+            prev < images.length-visibleCount ? prev+5 : prev
         )
     };
 
     const handleLeft = () => {
         setStartIndex((prev) =>
-            prev >= 0 ? prev -1 : prev
+            prev >= 5 ? prev -5 : prev
         )
     };
 
     return(
         <>
-        <h4 style={{textAlign: "center", fontFamily: "sans-serif", textTransform: "uppercase", fontWeight: "200"}}>Joggers under Rs 899</h4>
+        <h4 style={{textAlign: "center", fontFamily: "sans-serif", textTransform: "uppercase", fontWeight: "200", marginTop: "20px"}}>Must Have Deals: Min 75% off</h4>
            <div className="slider-container">
         <button onClick={handleLeft} disabled={startIndex === 0} className="slider-button left">
           &#8249; 
@@ -148,6 +206,15 @@ export const Slider2 = () => {
         </button>
       </div>
       <h4 style={{fontFamily:"sans-serif", textAlign: "center", textDecoration:"underline", cursor:"pointer",color:"#42A2A2"}}>Explore more &#8250;</h4>
+      <div className="images">
+        <img src={image16} alt="" />
+        <img src={image17} alt="" />
+        <img src={image18} alt="" />
+        <img src={image19} alt="" />
+        <img src={image20} alt="" />
+        <img src={image21} alt="" />
+        <img src={image22} alt="" />
+      </div>
         </>
     )
 }

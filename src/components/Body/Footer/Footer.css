@@ -1,0 +1,61 @@
+.footer{
+    height: 2600px;
+    width: 100%;
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+.contacts{
+    height: 240px;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0 3% 4%;
+}
+.contacts div{
+    margin: 5px;
+    width: 24%;
+}
+p{
+    color: white;
+    line-height: 1.8;
+    cursor: pointer;
+}
+h4{
+    line-height: 2.5;
+}
+.apps{
+    display: flex;
+    width: 100%;
+}
+.apps img{
+    width: 120%;
+    cursor: pointer;
+}
+.clothes{
+    height: 940px;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0 3% 4%;
+}
+.clothes div{
+    margin: 5px;
+    width: 24%;
+}
+.type{
+    text-transform: uppercase;
+    color: #51CCCC;
+}
+.type h4{
+    color: #51CCCC;
+    cursor: pointer;
+}
+.description{
+    width: 92%;
+    margin-left: 4%;
+}
+.description h4{
+    line-height: 1.3;
+    font-weight: 300;
+}

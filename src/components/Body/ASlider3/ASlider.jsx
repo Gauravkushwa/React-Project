@@ -1,26 +1,16 @@
 import React, { useEffect, useState } from "react";
-import image1 from './image/ASlider2.1.jpg'
-import image2 from './image/ASlider2.2.jpg'
-import image3 from './image/ASlider2.3.jpg'
-import image4 from './image/ASlider2..4.jpg'
-import image5 from './image/ASlider2.5.jpg'
-import image6 from './image/ASlider2.6.jpg'
-import image7 from './image/ASlider2.7.jpg'
-import image8 from './image/ASlider2.8.jpg'
-import image9 from './image/ASlider2.9.jpg'
-import image10 from './image/ASlider2.10.jpg'
-import image11 from './image/ASlider2.11.jpg'
-import image13 from './image/ASlider2.13.jpg'
-import image14 from './image/ASlider2.14.jpg'
-import image15 from './image/ASlider2.15.jpg'
+import image1 from './image/ASlider3.1.webp'
+import image2 from './image/ASlider3.2.webp'
+import image3 from './image/ASlider3.3.jpg'
+import image4 from './image/ASlider3.4.jpg'
+import banner from './image/banner3.jpg'
  import './ASlider.css'
 
 const images = [
-  image1, image2, image3, image4, image5,image6, image7,image8, image8, image9,
-  image10, image11, image13, image14, image15
+  image1, image2, image3, image4, 
 ];
 
-export const ASlider2 = () => {
+export const ASlider3 = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
   
     useEffect(() => {
@@ -42,6 +32,7 @@ export const ASlider2 = () => {
     };
   
     return (
+      <>
       <div className="slider-container">
         <div className="slider-wrapper" style={{ transform: `translateX(${-currentIndex * 100}%)` }}>
           {images.map((image, index) => (
@@ -58,6 +49,8 @@ export const ASlider2 = () => {
           ))}
         </div>
       </div>
+      <img style={{marginTop:"20px"}} id="banner" src={banner} alt="" />
+      </>
     );
   };
 

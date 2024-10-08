@@ -216,7 +216,7 @@ export const Slider3 = () => {
 
     const handleLeft = () => {
         setStartIndex((prev) =>
-            prev > 5 ? prev -5 : prev
+            prev >= 5 ? prev -5 : prev
         )
     };
 
